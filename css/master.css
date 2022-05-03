@@ -82,6 +82,7 @@ header .container nav{
 }
 header .container nav i{
     color: var(--main-color);
+    cursor: pointer
 }
 
 header .container nav ul{
@@ -115,7 +116,6 @@ header .container nav ul li:not(:last-child) a{
 
 header .container nav ul a:hover{
     padding-left: 25px;
-    font-weight: 800;
 }
 
 header nav:hover ul{
