@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Leon Agency</title>
 
     <!-- Main template CSS File -->
     <link rel="stylesheet" href="css/master.css">
@@ -49,7 +49,7 @@
     <!-- End Landing -->
 
     <!-- Start Features -->
-    <div class="features">
+    <div class="features section">
         <div class="container">
             <div class="box">
                 <i class="far fa-lightbulb"></i>
@@ -71,7 +71,7 @@
     <!-- End Features -->
 
     <!-- Services Start -->
-    <div class="services" id="services">
+    <div class="services section" id="services">
         <div class="special-heading">
             <h3>Services</h3>
             <p>Don't be busy, be productive</p>
@@ -124,7 +124,7 @@
     <!-- Services End -->
 
     <!-- Portfolio Start -->
-    <div class="portfolio" id="portfolio">
+    <div class="portfolio section" id="portfolio">
         <div class="special-heading">
             <h3>Portfolio</h3>
             <p>If you do it right, it will last forever</p>
@@ -156,7 +156,7 @@
     <!-- Portfolio End -->
 
     <!-- About Start -->
-    <div class="about" id="about">
+    <div class="about section" id="about">
         <div class="special-heading">
             <h3>About</h3>
             <p>Less is more work</p>
@@ -183,7 +183,7 @@
 
     <!-- Contact Start -->
   
-    <div class="contact" id="contact">
+    <div class="contact section" id="contact">
         <div class="special-heading">
             <h3>Contact</h3>
             <p>We are born to create</p>
@@ -191,8 +191,10 @@
         <div class="container">
             <div class="contact-content">
                 <div class="mail">
-                    <p>Feel free to drop us a line at:</p>
-                    <a href="mailto:leonagency@mail.com">leonagency@mail.com</a>
+                    <h3>How Can We Help?</h3>
+                    <p>Feel free to drop us a message at:
+                        <a href="mailto:leonagency@mail.com">leonagency@mail.com</a>
+                    </p>
                 </div>
                 <div class="social">
                     <p>find us on social networks</p>
@@ -203,13 +205,29 @@
                     </div>
                 </div>
             </div>
+            <form action="">
+                <div class="input-container">
+                    <label for="">Name</label>
+                    <input type="text" >
+                </div>
+                <div class="input-container">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+                <div class="input-container">
+                    <label for="">Message</label>
+                    <textarea></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
     
     <!-- Contact End -->
     <footer>
-        <p> &copy; 2021 <span>Leaon</span>, All right Reserved</p>
+        <p> &copy; <span id="copyRightYear"></span>, All right Reserved</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 
