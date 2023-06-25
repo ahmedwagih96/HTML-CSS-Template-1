@@ -1,3 +1,3 @@
 # HTML-CSS-Template-1
-Project Made by HTML &amp; CSS Only
+Project Made by HTML, CSS  &amp; JS
 
