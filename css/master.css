@@ -27,6 +27,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+/* XSmall */
+@media (min-width: 400px) {
+  .container {
+    width: 350px;
+  }
+}
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -53,7 +59,7 @@ body {
   padding-bottom: 50px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 992px) {
     .special-heading{
         padding-bottom: 25px;
     }
@@ -76,7 +82,7 @@ body {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .section {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -219,8 +225,12 @@ header .container nav ul a:hover {
 
 .services .services-box {
   text-align: center;
-  flex-basis: 45%;
-  min-width: 350px;
+  width: 450px
+}
+@media (max-width: 992px) {
+  .services .services-box {
+    width: 350px    
+  } 
 }
 
 .services .services-box i {
@@ -249,7 +259,7 @@ header .container nav ul a:hover {
 
 .portfolio .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 20px;
 }
 
@@ -277,6 +287,15 @@ header .container nav ul a:hover {
   font-size: 16px;
   margin-bottom: 20px;
 }
+
+@media (max-width: 400px) {
+  .portfolio .protfolio-content h3{
+    font-size: 16px;
+  }
+  .portfolio .protfolio-content p{
+    font-size: 14px;
+  }
+}
 /* Portfolio End */
 
 /* About Start */
@@ -301,7 +320,7 @@ header .container nav ul a:hover {
   margin: 0 auto 10px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .about .container .about-content p{
     line-height: 1.5;
     font-size: 16px;
@@ -362,30 +381,36 @@ header .container nav ul a:hover {
   color: var(--main-color);
   text-transform: uppercase;
 }
-@media (max-width:970px) {
-  .contact .mail h3{
-    font-size: 30px
-  }
-}
-@media (max-width:750px) {
-  .contact .mail h3{
-    font-size: 20px
-  }
-}
+
 .contact .mail p {
   color: var(--second-color);
   font-weight: 800;
   font-size: 25px;
   margin: 0 0 20px;
 }
-@media (max-width:970px) {
+@media (max-width:992px) {
+  .contact .mail h3{
+    font-size: 30px
+  }
   .contact .mail p{
     font-size: 20px
   }
 }
-@media (max-width:750px) {
+@media (max-width:768px) {
+  .contact .mail h3{
+    font-size: 20px
+  }
   .contact .mail p{
     font-size: 15px
+  }
+}
+
+@media (max-width: 400px) {
+  .contact .mail h3{
+    font-size: 16px
+  }
+  .contact .mail p{
+    font-size: 12px
   }
 }
 
